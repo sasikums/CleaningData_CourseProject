@@ -11,4 +11,8 @@ At a broad level, the raw data consists of data collected from Samsung smartphon
 
 run_analysis.R uses this raw data to output a 'tidy' dataset consisting of the average of selected measures (mean & standard deviation) for each activity and subject across training and test datasets. 
 
-See Codebook.md for details.
+The raw data of both training and test sets are imported to R, using read.table and data.table.The descriptive measurement names and activivty labels are then attached to the data. The data is then subset to include only those measurements that involve a mean or a standard deviation. An average of each measure is then calculated for each subject and actitvity. This data is then output using write.table to create a tidy dataset.
+
+# Codebook.md 
+
+Contains a detailed description of the variables and their creation
