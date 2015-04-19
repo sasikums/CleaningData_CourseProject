@@ -1,6 +1,6 @@
 # CleaningData_CourseProject
 
-The repository contains one R file (run_analysis.R) and a codebook (Codebook.md) to explain the variables.
+The repository contains one R file (run_analysis.R) and a codebook (Codebook.md) to explain the variables. An example of the output of run_analysis.R is also included (tidy_data.txt)
 
 # run_analysis.R
 
@@ -16,3 +16,7 @@ The raw data of both training and test sets are imported to R, using read.table 
 # Codebook.md 
 
 Contains a detailed description of the variables and their creation
+
+# tidy_data.txt
+
+Example of r_analysis ouput
