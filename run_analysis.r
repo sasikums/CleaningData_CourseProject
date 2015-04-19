@@ -50,11 +50,11 @@ importdata <- function(type){
   
 }
 ## Import training and test data
-#train <- importdata('train')
-#test <- importdata('test')
+train <- importdata('train')
+test <- importdata('test')
 
 ## Combine Training and Test Data
-#consol_data <- rbind(train,test)
+consol_data <- rbind(train,test)
 
 ### Tranpose data to long  form to assist aggrgation
 melt_data  <- melt(consol_data,id.vars=c('Subject','Activity_Label'),
@@ -65,4 +65,5 @@ agg_data <- melt_data[,list(mean(Measurement)),
                       by=c('Subject','Activity_Label','Variable')]
 setnames(agg_data,'V1','Mean_of_Variable')
 
+#Export data as a text file
 write.table(agg_data, file = "./tidy_data.txt",row.name=FALSE)
