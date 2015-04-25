@@ -10,7 +10,7 @@ Identifies activity to which measurement refers. Ranges from Walking, Walking Up
 
 ##### 3.) Variable:
 
-Describes type of measurement. Restricted to measurements related to mean and standard deviation for:
+Describes type of measurement. A -mean() and -std() were recorded for each family of measurement listed below
 
 tBodyAcc-XYZ
 tGravityAcc-XYZ
